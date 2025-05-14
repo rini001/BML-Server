@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://bml-client-git-main-rini001s-projects.vercel.app', // frontend URL
+  origin: 'https://bml-client.vercel.app/', // frontend URL
   credentials: true,
 }));
 
