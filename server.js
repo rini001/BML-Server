@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://bml-client.vercel.app', // frontend URL
+   origin: process.env.CORS_ALLOWED_ORIGIN || 'http://localhost:5173',
   credentials: true,
 }));
 
